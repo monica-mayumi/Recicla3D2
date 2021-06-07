@@ -24,7 +24,14 @@ namespace Recicla3D2
 
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
+
         {
+            services.AddSwaggerGen(options =>
+            {
+                options.SwaggerDoc("v1", new Microsoft.OpenApi.Models.OpenApiInfo { Title = "Projeto Exemplo", Version = "v1" });
+            });
+
+
             services.AddControllers();
             
         }
@@ -47,6 +54,13 @@ namespace Recicla3D2
             {
                 endpoints.MapControllers();
             });
+            app.UseSwagger();
+            app.UseSwaggerUI(c =>
+            {
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "Projeto Exemplo V1");
+            });
+
+
         }
     }
 }
