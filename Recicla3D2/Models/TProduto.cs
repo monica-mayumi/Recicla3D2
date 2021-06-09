@@ -14,6 +14,6 @@ namespace Recicla3D2.Models
         public decimal? PrecoVenda { get; set; }
         public float? SaldoAtual { get; set; }
         public DateTime? DataValidade { get; set; }
-        public object TFornecedor { get; internal set; }
+        public long FornecedorId { get;  set; }
     }
 }

@@ -1,0 +1,152 @@
+﻿<html>  
+    <head>  
+	
+        <title>Objetos Decorativos</title>  
+		        
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+		<link href="css/product.css" rel="stylesheet">
+		<link rel="shortcut icon" href="img/favicon.png">
+		
+		<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+		<script src="filamentos.js"></script>      
+		
+		
+		<style>
+				.lista-produto {
+					width: 100%;
+					padding:2px;
+					border:0;
+				}
+
+				@media (min-width: 576px) {
+					.lista-produto {
+						width: 50%;
+
+					}
+				}
+
+				@media (min-width: 768px) {
+					.lista-produto {
+						width: 33.333%;
+
+					}
+				}
+
+				@media (min-width: 992px) {
+					.lista-produto{
+						width: 25.%;
+
+					}
+				}
+				
+				
+				.card-img-top {
+					height: 15rem;
+					object-fit: cover;
+				}
+				
+		</style>
+		
+		
+    </head>  
+	
+<body>  
+
+<!-- Nav Bar -->
+
+<nav class="navbar navbar-light" style="background-color: #2ab5fa;">
+    <div class="container">
+      <a href="#">
+      <img src ="img/soabolinha.png" width = "50" height = "50">
+    </a>
+  
+    
+    <ul class="nav nav-pills">	
+      <li>
+         <a href="#" class="nav-link text-light">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-cart2" viewBox="0 0 16 16">
+          <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"/>
+            </svg>
+          </a>
+      </li>
+  
+      <li>
+        <a href="#" class="nav-link text-light">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+          <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+          <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+          </svg>
+        </a>
+      </li>
+    </ul>
+  </div>
+  
+  </nav>
+
+
+	<br>
+	<br>
+
+<!--breadcrumb-->
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+					          <li class="breadcrumb-item"><a href="produtos.html">Produtos</a></li>
+                    <li class="breadcrumb-item"><a href="categorias.html">Categorias</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Filamentos</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+</div>
+
+
+<div class="container">
+
+    <div class="row">
+	
+        <div class="col-sm-3">
+            <div class="card bg-light mb-3">
+                <div class="card-header bg-primary text-white"><i class="fa fa-list"></i>Categorias</div>
+                <ul class="list-group category_block">
+                    <li class="list-group-item"><a href="objetos-decorativos.html">Objetos decorativos</a></li>
+                    <li class="list-group-item"><a href="impressoras.html">Impressoras</a></li>
+                    <li class="list-group-item"><a href="filamentos.html">Filamentos</a></li>
+                </ul>
+            </div>
+
+        </div>
+		
+        <div class="col-sm-9">
+		
+
+<div class="container">
+
+		<ul class="list-group list-group-horizontal flex-wrap" id="lista-produto">
+
+			
+
+			
+
+
+		</ul>
+
+</div>
+
+
+
+           
+
+        </div>
+		
+    </div>
+
+</div>
+
+
+

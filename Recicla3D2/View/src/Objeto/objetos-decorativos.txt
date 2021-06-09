@@ -1,0 +1,19 @@
+﻿[
+        {
+          "id": "1",
+          "nome": "Peças de Xadrez",
+          "descricao": "Escolhe entre as mais variadas peças de xadrez disponíveis",
+		  "preco": "29,90",
+		  "imagem": "decorativo1.jpeg",
+      "url": "peça-xadrez.html"
+        },
+        {
+          "id": "2",
+          "nome": "Vasos",
+          "descricao": "Variedade de vasos para plantas",
+		  "preco": "29,90",
+		  "imagem": "decorativo3.jpg",
+      "url": "vaso-planta.html"
+        }
+    
+]

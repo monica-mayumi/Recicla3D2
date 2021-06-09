@@ -1,0 +1,199 @@
+﻿<html>  
+    <head>  
+	
+        <title>Detalhe Produto</title>  
+		        
+	  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+		<link href="css/product.css" rel="stylesheet">
+    <link rel="shortcut icon" href="img/favicon.png">
+
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  	<script src="impressora-moderna.js"></script>      
+		
+
+<style>
+
+
+
+.carousel-control-next-icon,.carousel-control-prev-icon{
+	filter: invert(1);
+}
+
+
+</style>
+
+		
+    </head>  
+	
+<body>  
+
+<!-- Nav Bar -->
+
+<nav class="navbar navbar-light" style="background-color: #2ab5fa;">
+  <div class="container">
+    <a href="#">
+    <img src ="img/soabolinha.png" width = "50" height = "50">
+  </a>
+
+  
+  <ul class="nav nav-pills">	
+    <li>
+       <a href="#" class="nav-link text-light">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-cart2" viewBox="0 0 16 16">
+        <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"/>
+          </svg>
+        </a>
+    </li>
+
+    <li>
+      <a href="#" class="nav-link text-light">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+        <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+        <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+        </svg>
+      </a>
+    </li>
+  </ul>
+</div>
+
+</nav>
+
+
+  <br>
+  <br>
+
+<!--breadcrumb-->
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item"><a href="produtos.html">Produtos</a></li>
+                    <li class="breadcrumb-item"><a href="categorias.html">Categorias</a></li>
+                    <li class="breadcrumb-item"><a href="impressoras.html">Impressoras</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Impressora Moderna</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+</div>
+
+
+<div class="container">
+  <!-- Page Heading -->
+  <div class="row">
+    <div class="col-12">
+      <h1 id="nome-produto"></h1>
+    </div>
+  </div>
+  <!-- /.row -->
+
+  <div class="row">
+  
+  
+	<!-- GALERIA IMAGENS -->
+  
+    <div class="col-lg-6 mb-4">
+      
+
+		
+			<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+			  <div class="carousel-inner">
+			  </div>
+			  
+			  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				<span class="sr-only">Previous</span>
+			  </a>
+			  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+				<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				<span class="sr-only">Next</span>
+			  </a>
+			</div>
+		
+
+
+      
+    </div>
+
+
+	<!-- DESCRITIVO PRODUTOS -->
+	
+    <div class="col-lg-6">
+	
+      <form>
+
+          <div class="form-group row">
+            <label class="col-sm-3 col-md-3 form-control-label">Preço:</label>
+            <div class="col-sm-8 col-md-9">
+              <h4 class="text-success" id="preco-produto"></h4>
+            </div>
+          </div>
+
+          
+
+
+
+          <div class="form-group row">
+            <label class="col-sm-3 col-md-3 form-control-label">Descrição:</label>
+            <div class="col-sm-8 col-md-9">
+              <p class="text-justify" id="descricao-produto"></p>
+            </div>
+          </div>
+
+          
+          <div class="form-group row">
+            <label class="col-sm-3 col-md-3 form-control-label">Fabricante:</label>
+            <div class="col-sm-9 col-md-9">
+              
+              <p class="text-justify" id="fabricante-produto"></p>
+              
+            </div>
+          </div>
+          
+
+
+          
+
+          
+
+          <div class="form-group row">
+            <label for="Quantity" class="col-sm-3 col-md-3 form-control-label">Quantidade:</label>
+            <div class="col-sm-8 col-md-9">
+             
+              <input type="number" class="form-control" id="quantidade" name="quantidade" maxlength="5" value="1">
+            </div>
+          </div>
+
+       
+          <div class="form-group product-stock product-available row visible">
+            <label class="col-sm-3 col-md-3 form-control-label"></label>
+            <div class="col-sm-8 col-sm-offset-3 col-md-9 col-md-offset-3">
+
+              
+              <input type="submit" class="adc btn btn-primary" value="Adicionar ao carrinho">
+              
+
+
+              <a href="pagina-de-produtos.html" class="btn btn-link btn-sm" title="Continue Shopping">← Continuar Comprando</a>
+            </div>
+          </div>          
+
+
+    
+
+
+    </div>
+  </div>
+
+  
+
+</div>
+
+</div>
+
+
+

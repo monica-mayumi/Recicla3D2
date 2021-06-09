@@ -1,0 +1,26 @@
+[
+        {
+          "id": "01",
+          "nome": "Objetos decorativos",
+          "descricao": "Objetos decorativos em geral",
+		  "preco": "29,90",
+		  "imagem": "decorativo4.jpg",
+      "url": "objetos-decorativos.html"
+        },
+        {
+          "id": "02",
+          "nome": "Impressoras",
+          "descricao": "Impressoras 3D de última geração",
+		  "preco": "2.999,90",
+		  "imagem": "impressora1.jpg",
+      "url": "Impressoras.html"
+        },
+        {
+          "id": "03",
+          "nome": "Filamentos",
+          "descricao": "Filamentos 100% reciclados",
+		  "preco": "29,90",
+		  "imagem": "filamento.jpg",
+      "url": "filamentos.html"
+        }
+]

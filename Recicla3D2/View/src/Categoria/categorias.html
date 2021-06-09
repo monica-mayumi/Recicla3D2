@@ -1,0 +1,157 @@
+﻿<html>  
+    <head>  
+	
+        <title>Categorias de Produtos</title>  
+
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+		<link rel="shortcut icon" href="img/favicon.ico">	
+		<link href="css/product.css" rel="stylesheet">
+		
+
+		<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>        
+		<script src="categorias.js"></script>      
+		
+		
+		<style>
+
+				.fundo-card {
+					background-color:#e3f2fd;
+				}
+				.lista-produto {
+					width: 100%;
+					padding:2px;
+					border:0;
+				}
+
+				@media (min-width: 576px) {
+					.lista-produto {
+						width: 50%;
+
+					}
+				}
+
+				@media (min-width: 768px) {
+					.lista-produto {
+						width: 33.333%;
+
+					}
+				}
+
+				@media (min-width: 992px) {
+					.lista-produto{
+						width: 25.%;
+
+					}
+				}
+				
+				
+				.card-img-top {
+					height: 15rem;
+					object-fit: cover;
+				}
+				
+		</style>
+		
+		
+    </head>  
+	
+<body>  
+
+<!-- Nav Bar -->
+
+<nav class="navbar navbar-light" style="background-color: #2ab5fa;">
+    <div class="container">
+      <a href="#">
+      <img src ="img/soabolinha.png" width = "50" height = "50">
+    </a>
+  
+    
+    <ul class="nav nav-pills">	
+      <li>
+         <a href="#" class="nav-link text-light">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-cart2" viewBox="0 0 16 16">
+          <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"/>
+            </svg>
+          </a>
+      </li>
+  
+      <li>
+        <a href="#" class="nav-link text-light">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+          <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+          <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+          </svg>
+        </a>
+      </li>
+    </ul>
+  </div>
+  
+  </nav>
+
+<br>
+<br>
+
+<!--breadcrumb-->
+
+
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item"><a href="produtos.html">Produtos</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Categorias</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+</div>
+
+<!-- Card Categorias -->
+
+
+<div class="row">
+
+	<div class="col-sm-2">
+		<div class="container-fluid">
+			  <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+				<a class="nav-link active" role="tab" aria-controls="v-pills-home" aria-selected="true">Categorias</a>
+				<a class="nav-link" href="objetos-decorativos.html" role="tab" aria-controls="v-pills-profile" aria-selected="false">Objetos Decorativos</a>
+				<a class="nav-link" href="impressoras.html" role="tab" aria-controls="v-pills-messages" aria-selected="false">Impressoras</a>
+				<a class="nav-link" href="filamentos.html" role="tab" aria-controls="v-pills-settings" aria-selected="false">Filamentos</a>
+			</div>
+		</div>
+	</div>
+
+<div class="col-sm-8">
+<div class="container">
+		
+
+<div class="container">
+
+		<ul class="list-group list-group-horizontal flex-wrap" id="lista-produto">
+
+			
+
+			
+
+
+		</ul>
+
+</div>
+
+
+
+           
+
+        </div>
+		
+    </div>
+
+</div>
+
+
+

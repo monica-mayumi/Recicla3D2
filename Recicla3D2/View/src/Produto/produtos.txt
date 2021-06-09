@@ -1,0 +1,66 @@
+[
+        {
+          "id": "1",
+          "nome": "Peças de Xadrez",
+          "descricao": "Peças de Xadrez impressas",
+		  "preco": "29,90",
+		  "imagem": "decorativo1.jpeg",
+      "url": "peça-xadrez.html"
+        },
+        {
+          "id": "2",
+          "nome": "Vasos para Plantas",
+          "descricao": "Vasos impressos",
+		  "preco": "29,90",
+		  "imagem": "decorativo3.jpg",
+      "url": "vaso-planta.html"
+        },
+        {
+          "id": "4",
+          "nome": "Decorativo Encomenda",
+          "descricao": "Escolha seu objeto decorativo personalizado",
+		  "preco": "29,90",
+		  "imagem": "decorativo4.jpg",
+      "url": ""
+        },
+        {
+          "id": "5",
+          "nome": "Filamento Preto",
+          "descricao": "Filamento para impressão na cor Preta",
+		  "preco": "19,90",
+		  "imagem": "filamento1.jpg",
+      "url": "filamento-preto.html"
+        },
+        {
+          "id": "6",
+          "nome": "Filamento Branco",
+          "descricao": "Filamento para impressão na cor Branca",
+		  "preco": "19,90",
+		  "imagem": "filamento2.jpg",
+      "url": "filamento-branco.html"
+        },
+        {
+          "id": "8",
+          "nome": "Filamento Verde",
+          "descricao": "Filamento para impressão na cor Verde",
+		  "preco": "19,90",
+		  "imagem": "filamento5.jpg",
+      "url": "filamento-verde.html"
+        },
+        {
+          "id": "9",
+          "nome": "Impressora Moderna",
+          "descricao": "Impressora de última geração",
+		  "preco": "1.999,90",
+		  "imagem": "impressora1.jpg",
+      "url": "impressora-moderna.html"
+        },
+        {
+          "id": "10",
+          "nome": "Impressora Econômica",
+          "descricao": "Impressora de alta economia",
+		  "preco": "999,90",
+		  "imagem": "impressora2.jpg",
+      "url": "impressora-economcia.html"
+        }
+]

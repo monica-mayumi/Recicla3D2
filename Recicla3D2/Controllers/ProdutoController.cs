@@ -24,7 +24,7 @@ namespace Recicla3D2.Controllers
         {
             try
             {
-                List<TProduto> products = db.Produtos
+                List<TProduto> products = db.TProdutos
                             .Include(p => p.TFornecedor)
                             .ToList();
                 return products;
@@ -40,7 +40,7 @@ namespace Recicla3D2.Controllers
         {
             try
             {
-                TProduto products = await db.Produtos.FindAsync(id);
+                TProduto products = await db.TProdutos.FindAsync(id);
 
                 if (id == 0)
                 {
@@ -72,7 +72,7 @@ namespace Recicla3D2.Controllers
             {
                 return NotFound();
             }
-            db.Produtos.Add(product);
+            db.TProdutos.Add(product);
             await db.SaveChangesAsync();
 
             return NoContent();
@@ -104,7 +104,7 @@ namespace Recicla3D2.Controllers
         [HttpDelete("{id}")]
         public async Task<ActionResult> Delete(long id)
         {
-            TProduto product = await db.Produtos.FindAsync(id);
+            TProduto product = await db.TProdutos.FindAsync(id);
 
             if (!ModelState.IsValid)
             {
@@ -118,7 +118,7 @@ namespace Recicla3D2.Controllers
             {
                 return NotFound();
             }
-            db.Produtos.Remove(product);
+            db.TProdutos.Remove(product);
             await db.SaveChangesAsync();
 
             return NoContent();

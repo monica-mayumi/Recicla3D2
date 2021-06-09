@@ -24,7 +24,7 @@ namespace Recicla3D2.Controllers
         {
             try
             {
-                List<TFornecedor> fornecedores = this.db.Fornecedores.ToList();
+                List<TFornecedor> fornecedores = this.db.TFornecedors.ToList();
                 return fornecedores;
             }
             catch (Exception ex)
@@ -38,7 +38,7 @@ namespace Recicla3D2.Controllers
         {
             try
             {
-                TFornecedor fornecedor = await this.db.Fornecedores.FindAsync(id);
+                TFornecedor fornecedor = await this.db.TFornecedors.FindAsync(id);
 
                 if (id == 0)
                 {
@@ -70,7 +70,7 @@ namespace Recicla3D2.Controllers
             {
                 return NotFound();
             }
-            this.db.Fornecedores.Add(fornecedor);
+            this.db.TFornecedors.Add(fornecedor);
             await db.SaveChangesAsync();
 
             return NoContent();
@@ -102,7 +102,7 @@ namespace Recicla3D2.Controllers
         [HttpDelete("{id}")]
         public async Task<ActionResult> Delete(long id)
         {
-            TFornecedor fornecedor = await db.Fornecedores.FindAsync(id);
+            TFornecedor fornecedor = await db.TFornecedors.FindAsync(id);
 
             if (!ModelState.IsValid)
             {
@@ -116,7 +116,7 @@ namespace Recicla3D2.Controllers
             {
                 return NotFound();
             }
-            db.Fornecedores.Remove(fornecedor);
+            db.TFornecedors.Remove(fornecedor);
             await db.SaveChangesAsync();
 
             return NoContent();

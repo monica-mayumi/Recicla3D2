@@ -1,0 +1,19 @@
+﻿[
+        {
+          "id": "1",
+          "nome": "Impressora Moderna",
+          "descricao": "Impressora moderna de alta precisão de impressão",
+		  "preco": "2.999,90",
+		  "imagem": "impressora1.jpg",
+      "url": "impressora-moderna.html"
+        },
+        {
+          "id": "2",
+          "nome": "Impressora Econômica",
+          "descricao": "Impressora econômica, para altas horas de trabalho com manor uso de energia",
+		  "preco": "1.999,90",
+		  "imagem": "impressora2.jpg",
+      "url": "impressora-economica.html"
+        }
+    
+]

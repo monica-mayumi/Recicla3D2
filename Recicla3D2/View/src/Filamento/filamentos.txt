@@ -1,0 +1,27 @@
+﻿[
+        {
+          "id": "1",
+          "nome": "Filamento Preto",
+          "descricao": "Le Lorem <b>Decorativos</b> Ipsum est le faux texte",
+		  "preco": "29,90",
+		  "imagem": "filamento1.jpg",
+      "url": "filamento-preto.html"
+        },
+        {
+          "id": "2",
+          "nome": "Filamento Branco",
+          "descricao": "Le Lorem <b>Decorativos</b> Ipsum est le faux texte",
+		  "preco": "29,90",
+		  "imagem": "filamento2.jpg",
+      "url": "filamento-branco.html"
+        },
+        {
+          "id": "3",
+          "nome": "Filamento Verde",
+          "descricao": "Le Lorem <b>Decorativos</b> Ipsum est le faux texte",
+		  "preco": "29,90",
+		  "imagem": "filamento5.jpg",
+      "url": "filamento-verde.html"
+        }
+    
+]

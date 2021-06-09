@@ -1,0 +1,9 @@
+﻿        {
+          "id": "01",
+          "fabricante": "Recicla3D",
+          "nome": "Impressora Moderna",
+          "descricao": "Le Lorem <b>Decorativos</b> Ipsum est le faux texte standard de limprimerie depuis les années 1500, quand un peintre anonyme assembla Le Lorem <b>S10</b> Ipsum est le faux texte standard de limprimerie depuis les années 1500, <br> quand un peintre anonyme assembla Le Lorem <b>S10</b> Ipsum est le faux texte standard de limprimerie depuis les années 1500, <br>quand un peintre anonyme assembla Le Lorem <b>S10</b> Ipsum est le faux texte standard de limprimerie depuis les années 1500, quand un peintre anonyme assembla Le Lorem <b>S10</b> Ipsum est le faux texte standard de limprimerie depuis les années 1500, quand un peintre anonyme assembla",
+		  "preco": "R$ 2.999,90",
+		  "imagem": "impressora1.jpg",
+		  "galeria": ["impressora1.jpg"]
+        }

@@ -1,0 +1,9 @@
+﻿        {
+          "id": "01",
+          "fabricante": "Recicla3D",
+          "nome": "Vasos",
+          "descricao": "Le Lorem <b>Decorativos</b> Ipsum est le faux texte standard de limprimerie depuis les années 1500",
+		  "preco": "R$ 19,90",
+		  "imagem": "decorativo2.jpg",
+		  "galeria": ["decorativo2.jpg","decorativo3.jpg"]
+        }

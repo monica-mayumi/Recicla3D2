@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery-3.5.1.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <!-- As 3 meta tags acima *devem* vir em primeiro lugar dentro do `head`; qualquer outro conteúdo deve vir *após* essas tags -->
+    <title>Cadastro de Usuário</title>
+    <link rel= "stylesheet" href= "css/">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lalezar&family=Palanquin+Dark:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap" rel="stylesheet">
+    <link href="css/folha.css" rel="stylesheet">
+  </head>
+  <body>
+
+<!-- Nav-Bar -->
+
+    <nav class="navbar navbar-light" style="background-color: #2ab5fa;">
+      <div class="container">
+        <a href="#">
+        <img src ="img/soabolinha.png" width = "50" height = "50">
+      </a>
+    
+      
+      <ul class="nav nav-pills">	
+        <li>
+           <a href="#" class="nav-link text-light">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-cart2" viewBox="0 0 16 16">
+            <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"/>
+              </svg>
+            </a>
+        </li>
+    
+        <li>
+          <a href="#" class="nav-link text-light">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+            <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+            <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+    
+    </nav>
+<div class="container">
+  <div class="p-3 border bg-light">
+  <h2>Cadastro de usuário</h2>
+
+        <div class="form-row">
+          <div class="col-md-4 mb-3">
+            <label for="validationTooltip01">Primeiro nome</label>
+            <input type="text" class="form-control" placeholder="Nome">
+          </div>
+          <div class="col-md-4 mb-3">
+            <label for="validationTooltip02">Sobrenome</label>
+            <input type="text" class="form-control" placeholder="Sobrenome">
+            </div>
+          </div>
+        <div class="form-row">
+          <div class="col-md-3 mb-3">
+            <label for="validationTooltip03">Cidade</label>
+            <input type="text" class="form-control" placeholder="Cidade">
+          </div>
+          <div class="col-md-3 mb-3">
+            <label for="inputEstado">Estado</label>
+            <select id="inputEstado" class="form-control">
+              <option selected>Escolher...</option>
+              <option>SP</option>
+              <option>RJ</option>
+              <option>RS</option>
+            </select>
+          </div>
+          <div class="col-md-3 mb-3">
+            <label for="validationTooltip05">CEP</label>
+            <input type="text" class="form-control" placeholder="CEP">
+            </div>
+          </div>
+        
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="inputEmail4">Email</label>
+                <input type="email" class="form-control" placeholder="Email">
+              </div>
+              <div class="form-group col-md-6">
+                <label for="inputPassword4">Senha</label>
+                <input type="password" class="form-control" placeholder="Senha">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="inputAddress">Endereço</label>
+              <input type="text" class="form-control"  placeholder="Rua Brasil">
+            </div>
+            <div class="form-group">
+              <label for="inputAddress2">Endereço 2</label>
+              <input type="text" class="form-control" placeholder="Rua São Paulo">
+            </div>
+       
+        
+            <button type="submit" class="btn btn-primary">Enviar</button>
+          </div>
+    </div>
+  </div>
+    </body>

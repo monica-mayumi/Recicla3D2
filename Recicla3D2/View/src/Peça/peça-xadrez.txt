@@ -1,0 +1,9 @@
+﻿        {
+          "id": "01",
+          "fabricante": "Recicla3D",
+          "nome": "Peças de Xadrez",
+          "descricao": "Le Lorem <b>Decorativos</b> Ipsum est le faux texte standard de limprimerie depuis les années 1500, quand un peintre anonyme assembla Le Lorem <b>S10</b> Ipsum est le faux texte standard de limprimerie depuis les années 1500, <br> quand un peintre anonyme assembla Le Lorem <b>S10</b> Ipsum est le faux texte standard de limprimerie depuis les années 1500, <br>quand un peintre anonyme assembla Le Lorem <b>S10</b> Ipsum est le faux texte standard de limprimerie depuis les années 1500, quand un peintre anonyme assembla Le Lorem <b>S10</b> Ipsum est le faux texte standard de limprimerie depuis les années 1500, quand un peintre anonyme assembla",
+		  "preco": "R$ 9,90",
+		  "imagem": "decorativo1.jpeg",
+		  "galeria": ["xadrez1.jpg","xadrez2.jpg"]
+        }

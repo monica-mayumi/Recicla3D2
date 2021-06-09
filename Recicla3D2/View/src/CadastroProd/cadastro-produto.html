@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery-3.5.1.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <!-- As 3 meta tags acima *devem* vir em primeiro lugar dentro do `head`; qualquer outro conteúdo deve vir *após* essas tags -->
+    <title>Cadastro de Produtos</title>
+    <link rel= "stylesheet" href= "css/">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lalezar&family=Palanquin+Dark:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="shortcut icon" href="img/favicon.png">
+    <!-- Crud-->
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>        
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+		
+		<script src="crud.js"></script>   
+  </head>
+
+<body>
+
+<!-- Nav-Bar -->
+
+  <nav class="navbar navbar-light" style="background-color: #2ab5fa;">
+    <div class="container">
+      <a href="index.html">
+      <img src ="img/soabolinha.png" width = "50" height = "50">
+    </a>
+  
+    
+    <ul class="nav nav-pills">	
+    
+      <li>
+        <a href="login.html" class="nav-link text-light">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+          <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+          <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+          </svg>
+        </a>
+      </li>
+    </ul>
+  </div>
+  
+  </nav>
+
+  <br>
+  <br>
+  
+  <div class="container">
+    <h2>Cadastro de Produto</h2>
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#ModalCadastro">Novo Produto</button><br /><br />
+    <table class="table table-bordered table-hover" id="CrudProduto">
+        <thead>
+            <tr>
+                <th>
+                    ID
+                </th>
+                <th>
+                    Nome
+                </th>
+                <th>
+                    Fabricante
+                </th>
+                <th>
+                    Quantidade
+                </th>
+                <th>
+                    Preço
+                </th>
+                <th colspan="2">
+                    Ação
+                </th>
+            </tr>
+        </thead>
+        <tbody id="CorpoTabela">
+        </tbody>
+    </table>
+
+
+
+<div class="modal" id="ModalCadastro" tabindex="-1" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+  
+      <div class="modal-header">
+      <h5 class="modal-title" id="myModalLabel">Cadastro de Produto</h5>
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+      </div>			
+      
+    
+            <div class="modal-body">				
+                <form>
+                    <div class="form-group">
+                        <label for="idproduto">ID</label>
+                        <input type="text" class="form-control" name="idproduto" id="idproduto" placeholder="Id" disabled="disabled"/>
+                    </div>
+                    <div class="form-group">
+                        <label for="nomeproduto">Nome</label>
+                        <input type="text" class="form-control" name="nomeproduto" id="nomeproduto" placeholder="Nome" required/>
+                    </div>
+                    <div class="form-group">
+                      <label for="fabricanteproduto">Fabricante</label>
+                      <input type="text" class="form-control" name="fabricanteproduto" id="fabricanteproduto" placeholder="Fabricante"/>
+                  </div>
+                  <div class="form-group">
+                    <label for="quantidadeproduto">Quantidade</label>
+                    <input type="text" class="form-control" name="quantidadeproduto" id="quantidadeproduto" placeholder="Quantidade"/>
+                </div>
+                    <div class="form-group">
+          <label for="precoproduto">Preço</label>
+                        <input type="text" class="form-control" name="precoproduto" id="precoproduto" placeholder="Preço" />
+                    </div>
+                    
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" id="btnAdd" >Adicionar</button>
+                <button type="button" class="btn btn-primary" id="btnUpdate" style="display:none;">Atualizar</button>
+                <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+            </div>
+        </div>
+    </div>       
+</div>
+
+
+
+<div class="modal" id="ModalExclusao" tabindex="-1" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+  
+      <div class="modal-header">
+      <h5 class="modal-title" id="myModalLabel">Exclusão de Produto</h5>
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+      </div>			
+      
+    
+            <div class="modal-body">
+
+      <div class="alert alert-danger" role="alert">
+        Deseja excluir o produto abaixo?
+        <div id="AlertIDProduto"></div>
+      </div>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" id="btnExcluir">Excluir</button>
+                <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+            </div>
+        </div>
+    </div>       
+</div>
+
+</div>
+</body>  
+ <!-- <body>  
+    <div class="container">
+       
+            <div class="p-3 border bg-light">
+                <h2>Cadastro de Produtos</h2>
+                <br>
+              <div class="form-row">
+                <div class="col-md-4 mb-3">
+                  <label for="validationTooltip01">Nome do produto</label>
+                  <input type="text" class="form-control">
+                </div>
+                <div class="col-md-4 mb-3">
+                  <label for="validationTooltip02">Categoria</label>
+                  <select id="inputEstado" class="form-control">
+                    <option selected>Escolher...</option>
+                    <option>Filamento</option>
+                    <option>Impressora</option>
+                  </select>
+                  </div>
+                </div>
+              <div class="form-row">
+                <div class="col-md-3 mb-3">
+                  <label for="validationTooltip03">Quantidade</label>
+                  <input type="text" class="form-control">
+                </div>
+                <div class="col-md-3 mb-3">
+                  <label for="validationTooltip04">Fornecedor</label>
+                  <input type="text" class="form-control">
+                </div>
+            </div>
+
+              
+               
+                  <div class="form-row">
+                    <div class="col-md-3 mb-3">
+                      <label for="inputEmail4">Valor de venda</label>
+                      <input type="email" class="form-control">
+                    </div>
+                    <div class="col-md-3 mb-3">
+                        <label for="validationTooltip05">Valor unitário</label>
+                        <input type="text" class="form-control">
+                        </div>
+          
+                  </div>
+                
+                  
+              
+                  <button type="submit" class="btn btn-primary">Enviar</button>
+              
+          </div>
+        </div>
+          </body>
+       -->   

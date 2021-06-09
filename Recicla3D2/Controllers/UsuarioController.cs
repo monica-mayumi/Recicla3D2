@@ -27,7 +27,7 @@ namespace Recicla3D2.Controllers
         {
             try
             {
-                List<TUsuario> users = this.db.Usuarios.ToList();
+                List<TUsuario> users = this.db.TUsuarios.ToList();
                 return users;
             }
             catch (Exception ex)
@@ -41,7 +41,7 @@ namespace Recicla3D2.Controllers
         {
             try
             {
-                TUsuario user = await this.db.Usuarios.FindAsync(id);
+                TUsuario user = await this.db.TUsuarios.FindAsync(id);
 
                 if (id == 0)
                 {
@@ -73,7 +73,7 @@ namespace Recicla3D2.Controllers
             {
                 return NotFound();
             }
-            this.db.Usuarios.Add(user);
+            this.db.TUsuarios.Add(user);
             await db.SaveChangesAsync();
 
             return NoContent();
@@ -105,7 +105,7 @@ namespace Recicla3D2.Controllers
         [HttpDelete("{id}")]
         public async Task<ActionResult> Delete(long id)
         {
-            TUsuario user = await this.db.Usuarios.FindAsync(id);
+            TUsuario user = await this.db.TUsuarios.FindAsync(id);
 
             if (!ModelState.IsValid)
             {
@@ -119,7 +119,7 @@ namespace Recicla3D2.Controllers
             {
                 return NotFound();
             }
-            this.db.Usuarios.Remove(user);
+            this.db.TUsuarios.Remove(user);
             await db.SaveChangesAsync();
 
             return NoContent();

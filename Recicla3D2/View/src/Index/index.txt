@@ -1,0 +1,26 @@
+[
+        {
+          "id": "1",
+          "nome": "Objetos Decorativos",
+          "descricao": "Le Lorem <b>Decorativos</b> Ipsum est le faux texte",
+		  "preco": "29,90",
+		  "imagem": "decorativo4.jpg",
+      "url": "objetos-decorativos.html"
+        },
+        {
+          "id": "2",
+          "nome": "Impressoras",
+          "descricao": "Le Lorem <b>Decorativos</b> Ipsum est le faux texte",
+		  "preco": "29,90",
+		  "imagem": "impressora1.jpg",
+      "url": "impressoras.html"
+        },
+        {
+          "id": "3",
+          "nome": "Filamentos",
+          "descricao": "Le Lorem <b>Decorativos</b> Ipsum est le faux texte",
+		  "preco": "29,90",
+		  "imagem": "filamento.jpg",
+      "url": "filamentos.html"
+        }
+]
